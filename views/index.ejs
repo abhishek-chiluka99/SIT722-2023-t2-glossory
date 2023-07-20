@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <h1>Glossory</h1>
+    <table class="wp-table">
+      <tr>
+        <th>ID</th>
+        <th>Term</th>
+        <th>Description</th>
+        <th>Reference</th>
+      </tr>
+      <% name.forEach((value) => { %>
+
+
+      <tr>
+        <td><%= value.id %></td>
+        <td><%= value.term %></td>
+        <td><%= value.description %></td>
+        <td><%= value.Reference %></td>
+      </tr>
+
+      <% }); %>
+    </table>
+
+
+  </body>
+</html>
